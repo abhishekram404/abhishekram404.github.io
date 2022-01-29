@@ -39,7 +39,6 @@ body {
   padding: 25px;
   overflow: hidden;
   background-color: #fafffd;
-  z-index: 100;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -114,6 +113,11 @@ body {
   font-size: 0.9rem;
 }
 
+.container main .sidebar .details .detail b a {
+  text-decoration: none;
+  color: #2f3e46;
+}
+
 .container main .sidebar .reach-out h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -148,7 +152,6 @@ body {
 .container main section {
   padding: 25px;
   height: 100%;
-  z-index: -1;
 }
 
 .container main section > h3 {

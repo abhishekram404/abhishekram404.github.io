@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #fafffd;
   min-height: 100vh;
@@ -162,7 +166,7 @@ body {
 }
 
 .container main section > div .name-line {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   display: block;
   color: #000;
   font-weight: 500;
@@ -174,7 +178,7 @@ body {
 }
 
 .container main section > div .skills {
-  margin-left: 20px;
+  margin: 10px 0 20px 0;
 }
 
 .container main section > div .skills .skill {
@@ -191,6 +195,9 @@ hr {
 }
 
 @media only screen and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
   .container main {
     display: -webkit-box !important;
     display: -ms-flexbox !important;

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /style.css.map
+Disallow: /style.scss  

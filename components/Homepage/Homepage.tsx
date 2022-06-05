@@ -16,9 +16,10 @@ const Homepage = (props: Props) => {
         <div className={styles.left}>
           <h1>
             Hello, I am <br />
-            <span className={`${styles.mark} ${styles.big}`}>
+            <span className={`${styles.mark} ${styles.big} ${styles.name}`}>
               {" "}
               Keshav Kishor Ram.
+              <span className={styles.nickname}>abhishek</span>
             </span>{" "}
             <br />I am a{" "}
             <span className={styles.underline}>React / Next JS</span>

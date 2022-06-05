@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #3a2a46;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbarLogo {
+  //   display: flex;
+  //   justify-content: space-between;
+
+  .first,
+  .second {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+  }
+  .first {
+    transform: translateX(0);
+    background-color: #a147f4;
+    animation: first 6s 1;
+    animation-fill-mode: forwards;
+    box-shadow: 1px 1px 5px rgba($color: #ffffff, $alpha: 0.2);
+    // animation-timing-function: linear;
+
+    // animation-timing-function: linear;
+  }
+  .second {
+    transform: translateX(92vw);
+    background-color: #bea0d3;
+    animation: second 6s 1;
+    animation-fill-mode: forwards;
+    box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.2);
+    // animation-timing-function: linear;
+  }
+}
+@keyframes first {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateX(46.5vw) rotate(1215deg);
+  }
+  to {
+    transform: translateX(0) rotate(1215deg);
+  }
+}
+
+@keyframes second {
+  from {
+    transform: translateX(92vw) rotate(0deg);
+  }
+  50% {
+    transform: translateX(46vw) rotate(-1215deg);
+  }
+  to {
+    transform: translate(0vw) rotate(-1215deg);
+  }
+}
+
+// @keyframes join {
+//   from {
+//     transform: translateX(50vw) rotate(0deg);
+//   }
+// 50% {
+//     transform: translateX(0) rotate(45deg);
+//   }
+//   to{
+//     transform: translate(0vw) rotate();
+//   }
+// }

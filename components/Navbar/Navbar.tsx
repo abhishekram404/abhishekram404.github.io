@@ -10,6 +10,14 @@ const Navbar = (props: Props) => {
         <div className={styles.first}></div>
         <div className={styles.second}></div>
       </div>
+
+      <ul className={styles.navbarNav}>
+        <li className={styles.navItem}>Home</li>
+        <li className={styles.navItem}>Skills</li>
+        <li className={styles.navItem}>Projects</li>
+        <li className={styles.navItem}>About</li>
+        <li className={styles.navItem}>Contact</li>
+      </ul>
     </div>
   );
 };

@@ -67,6 +67,28 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      > * {
+        filter: drop-shadow(0 1rem 10rem rgba(160, 71, 244, 0.274));
+        animation: float 3s infinite;
+        animation-timing-function: ease;
+        transition: 0.5s;
+      }
+
+      @keyframes float {
+        from {
+          transform: translate(0, 0);
+          filter: drop-shadow(0 1rem 10rem rgba(160, 71, 244, 0.274));
+        }
+        50% {
+          transform: translate(0, -1rem);
+          filter: drop-shadow(0 1rem 10rem rgba(160, 71, 244, 0.411));
+        }
+        to {
+          transform: translate(0, 0rem);
+          filter: drop-shadow(0 1rem 10rem rgba(160, 71, 244, 0.274));
+        }
+      }
     }
 
     .big {
